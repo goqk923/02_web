@@ -1,0 +1,106 @@
+
+.container {
+    width: 1100px;
+    height: inherit;
+    background: rgba(0,0,0,.3);
+    margin: 0 auto;
+    position: relative;
+}
+/* 레이아웃 */
+#headerWrap {
+    width: 100%;
+    height: 120px;
+    background: #f6f5ef;
+    border-top: 2px solid #000
+}
+.logo {
+    float: left; padding-top: 20px;
+}
+.util_nav {
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.util_nav ul {display: flex;}
+
+.util_nav ul li a{padding: 0 20px;}
+.util_nav ul li {position: relative;}
+.util_nav ul li:not(:last-child):after {
+    content:""; 
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background: #666;
+    top: 5px;
+    right: 0;
+}
+.btn_search {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 34px;
+    height: 34px;
+    background: white;
+    border: 1px solid #969595;
+    border-radius: 5px;
+}
+.btn_search a img {
+    margin-top: 6px;
+    margin-left: 7px;
+}
+.gnb_nav{
+    width: 100%;
+    position: absolute;
+    top: 54px;
+    left: 0;
+}
+.gnb_nav .gnb_nav_inner{ /*가운데 정렬 역할*/
+    width: 1100px;
+    height: 66px;
+    margin: 0 auto;
+}
+.gnb_nav .gnb_nav_inner>ul{
+    display: flex;
+    float: right;
+}
+.gnb_nav .gnb_nav_inner>ul >li >a{
+    font-weight: 500;
+    color: #333;
+    display: block;
+    padding: 10px 20px 42px;
+}
+.gnb_nav .gnb_nav_inner>ul > li:hover > a{
+    color : #669900;
+    background: #2c2a29;
+}
+.gnb_sub_wrap{
+    position: absolute;
+    background: #2c2a29;
+    width: 100%;
+    left: 0;
+    display: none;
+}
+.gnb_nav .gnb_nav_inner>ul > li:hover > .gnb_sub_wrap{
+    display: block;
+}
+.gnb_sub_wrap .sub_gnb_nav_inner{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.gnb_sub_wrap .sub_gnb_nav_inner>ul{}
+.gnb_sub_wrap .sub_gnb_nav_inner>ul>li{
+    line-height: 180%;
+}
+.gnb_sub_wrap .sub_gnb_nav_inner>ul>li a{
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+.gnb_sub_wrap .sub_gnb_nav_inner>ul>.sub_gnb_tit a{
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size:16px;
+}

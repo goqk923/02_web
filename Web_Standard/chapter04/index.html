@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그룹핑</title>
+    <style>
+        div{background: #ccc;}
+        ul{background: #f0f; width: 500px; margin: 0 auto; height: 50px}
+        li{
+            float: left; 
+            list-style: none; 
+            padding: 5px 10px
+        }
+        .span{border: 5px solid #ccc}
+    </style>
+</head>
+<body>
+    <h1>그룹핑</h1>
+    <h2>div</h2>
+    <p>블록 요소를 그룹핑 할때 사용한다.</p>
+
+    <div>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>about</li>
+            <li>about</li>
+            <li>about</li>
+        </ul>
+    </div>
+
+    <h2>span</h2>
+    <p>인라인 요소들을 그룹핑 한다.</p>
+   <span class="span"> <a href="#">오늘이 <span style="background: red;">수업</span>은</a><a href="#">css</a></span><input type="text">
+
+   <hr>
+   <h2>블록 요소에 인라인 방식으로 css적용하기</h2>
+   <p style="font-size: 12px; color: #069; line-height: 200%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facilis, nobis maxime velit, <br>omnis quisquam, fugit autem consequuntur itaque magni molestiae doloribus quae delectus deleniti deserunt alias accusamus debitis. Molestias!</p>
+
+   <hr>
+   <h2>span 요소의 사용과 특정 글자 꾸미기</h2>
+   <p>
+    <span style="background:#93b5dd; color: #000000;">Vegetables</span> fit for use are recognized by the small sprout. <br>
+    쓸모있는 <span style="background:#a8c9da; color: #000000;">야채</span>는 어린 싹으로 알 수 있다. 될성 싶은 나무는 떡잎부터 알아본다.
+   </p>
+   
+</body>
+</html>

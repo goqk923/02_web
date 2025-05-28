@@ -1,0 +1,24 @@
+@import url("style.css");
+
+h1 {
+    color: #ffF;
+}
+
+dl {
+    background: #55f555;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px 40px;
+    border: 5px solid #fff;
+
+}
+
+div {
+    width: 50%;
+    padding: 30px;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px #2b2828aa, -10px -10px 20px #ff0, 0 0 50px #55f555;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width: 700px;
+            height: 550px;
+            background: red;
+            margin: 0 auto;
+            border: 5px solid #000;
+        }
+        header{width: 100%; height: 100px; background: #ddd;border-bottom: 5px solid #000; box-sizing: border-box;}
+        main{
+            width: 100%; height: 400px; background: #95f03a;
+            display: flex;
+        }
+        .left{width: 100px; height: 400px; background: pink;}
+        .center{width: 500px; height: 400px; background: rgb(60, 216, 236); 
+            border-left: 5px solid #000; border-right: 5px solid #000; box-sizing: border-box;}
+        .right{width: 100px; height: 400px; background: pink;}
+        .box{width: 100px; height: 100px;}
+        .redbox{background: red;}
+        .greenbox{background: green;}
+        .centerBox{width: 100%; height: 200px;}
+        .bluebox{background: blue;}
+        .skybluebox{background: skyblue; border-top: 2.5px solid #000; box-sizing: border-box;}
+        .center>div:first-child{
+            border-bottom: 2.5px solid #000; box-sizing: border-box;
+        }
+        .rightbox{width: 100px; height: 200px;}
+        footer{width: 100%; height: 50px; background: #ddd; border-top: 5px solid #000; 
+            box-sizing: border-box; }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <main>
+            <div class="left">
+                <div class="box redbox"></div>
+                <div class="box greenbox"></div>
+                <div class="box redbox"></div>
+                <div class="box greenbox"></div>
+            </div>
+            <div class="center">
+                <div class="centerBox bluebox"></div>
+                <div class="centerBox skybluebox"></div>
+            </div>
+            <div class="right">
+                 <div class="box redbox"></div>
+                <div class="box greenbox"></div>
+                <div class="rightbox bluebox"></div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>

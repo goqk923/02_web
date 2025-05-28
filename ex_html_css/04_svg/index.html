@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        line{stroke: black; stroke-width: 2;}
+        .line{
+            animation-name: dash;
+            animation-duration:5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes dash{
+            0%{stroke-dashoffset:600}
+            100%{stroke-dashoffset:0}
+        }
+    </style>
+</head>
+<body>
+    <svg width="600" height="200" viewBox="0 0 600 200">
+        <line x1="10" y1="10" x2="600" y2="10" stroke-dasharray="200" stroke-dashoffset="0"/>
+        <line x1="10" y1="40" x2="600" y2="40" stroke-dasharray="200" stroke-dashoffset="50"/>
+        <line x1="10" y1="60" x2="600" y2="60" stroke-dasharray="200" stroke-dashoffset="100"/>
+        <line x1="10" y1="80" x2="600" y2="80" stroke-dasharray="200" stroke-dashoffset="200"/>
+        <line x1="10" y1="100" x2="600" y2="100" stroke-dasharray="600" stroke-dashoffset="600" class="line"/>
+    </svg>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> 상대 좌표 방식으로 배치하기 </title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+			body { 
+				font:12px "맑은 고딕",돋움,arial; 
+				margin:20px 0px; 
+				}
+			h1 { 
+				font-size:2em; 
+				color:#ffffff; 
+				margin:0px; 
+				padding:5px 50px; 
+				background-color:#666; 
+				}
+			h2 {
+				font-size:1.5em;
+				padding-left:120px;
+				padding-top:30px;
+				letter-spacing:-2px;
+				text-shadow:-1px -1px 15px #000;
+				}
+			h3 {
+				font-size:1.1em;
+				padding-left:120px;
+				letter-spacing:-1px;
+				font-weight:normal;
+				color:#8c8c8c;
+				}
+			p {
+				text-align:right;
+				padding-right:40px;
+				}
+			a {
+				color:#333;
+				text-decoration:none;
+				font-weight:bold;
+				font-family:"Arial Black",arial;
+				}
+			a:hover {
+				color:#093;
+				}
+			/* Layout */
+			section {
+				margin:0 auto;
+				width:750px;
+				}
+			div {
+				width:342px;
+				height:150px;
+				margin-left:20px;
+				margin-top:20px;
+				float:left;
+				}
+			.book1 {
+				background:#e66969;
+				}
+			.book2 {
+				background:#61e472;
+				}
+			.book3 {
+				background:#50a1e4;
+				clear:left;
+				}
+			.book4 {
+				background:#e06cd7;
+				}
+			input[type="search"] {
+				padding:5px;
+				width:220px;
+				background-color:#efefef;
+				}
+			input[type="submit"] {
+				padding:7px 10px;
+				background-color:#000;
+				color:#fff;
+				border:none;
+				border-radius:5px;
+				}
+			/* nav Layout */
+				/* nav{
+					width: 800px;
+					margin: 0 auto;
+					position: relative;
+				}
+				#logo{
+					position: absolute;
+					top: -10px;
+					left: -50px;
+				}
+				#topMenu{
+					display: flex;
+					position: absolute;
+					right: 0;
+					top: -30px;
+					list-style: none;
+				}
+				#topMenu li{padding: 0 10px; position: relative;}
+				#topMenu li:not(:last-child)::after{
+					content: "";
+					width: 1px;
+					height: 10px;
+					background: #000;
+					position: absolute;
+					top: 4px;
+					right: 0;
+				}
+				#searchForm{
+					position: relative;
+					top: -5px;
+					left: 150px;
+				}
+				h1{text-align: center} */
+				nav{
+					width: 800px;
+					margin: 0 auto;
+					position: relative;
+				}
+				#logo{
+					position: absolute;
+					top: -10px;
+					left: -50px;
+				}
+				#topMenu{
+					display: flex;
+					position: absolute;
+					right: 0;
+					top: -30px;
+					list-style: none;
+				}
+				#topMenu li{padding: 0 10px; position: relative;}
+				#topMenu li:not(:last-child)::after{
+					content: "";
+					width: 1px;
+					height: 10px;
+					background: #000;
+					position: absolute;
+					top: 4px;
+					right: 0;
+				}
+				#searchForm{
+					position: relative;
+					top: -5px;
+					left: 150px;
+				}
+				h1{text-align: center;}
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<figure>
+				<img src="images/top_logo.jpg" width="187" height="39" alt="정보문화사" id="logo"/>
+			</figure>
+			<ul id="topMenu">
+				<li class="liStyle"><a href="#">홈</a></li>
+				<li class="liStyle"><a href="#">회사소개</a></li>
+				<li class="liStyle"><a href="#">사이트맵</a></li>
+				<li><a href="#">도움말</a></li>
+			</ul>
+			<form id="searchForm">
+				<input type="search" name="seachBox" />
+				<input type="submit" value="검색">
+			</form>
+		</nav>
+		<header>
+			<h1>시리즈 안내</h1>
+		</header>
+		<section>
+			<div class="book1">
+				<h2>실력이 탐나는 시리즈</h2>
+				<h3>전략적 실전 대비 입문서 </h3>
+				<p><a href="http://infopub.co.kr" target="_blank" title="정보문화사 사이트로 이동합니다.">&gt;&gt; GO</a></p>
+			</div>
+			<div class="book2">
+				<h2>길라잡이 시리즈</h2>
+				<h3>단계별로 배울 수 있는 지침서</h3>
+				<p><a href="http://infopub.co.kr" target="_blank" title="정보문화사 사이트로 이동합니다.">&gt;&gt; GO</a></p>
+			</div>
+			<div class="book3">
+				<h2>회사 실무에 힘을 주는 시리즈</h2>
+				<h3>자연스럽게 익히는 OA 핵심 기능 수록 </h3>
+				<p><a href="http://infopub.co.kr" target="_blank" title="정보문화사 사이트로 이동합니다.">&gt;&gt; GO</a></p>
+			</div>
+			<div class="book4">
+				<h2>눈길 시리즈</h2>
+				<h3>IT 실무 교재 시리즈</h3>
+				<p><a href="http://infopub.co.kr" target="_blank" title="정보문화사 사이트로 이동합니다.">&gt;&gt; GO</a></p>
+			</div>
+		</section>
+	</body>
+</html>

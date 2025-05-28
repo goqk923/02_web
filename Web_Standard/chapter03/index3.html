@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인페이지</title>
+    <style>
+        #form1{width: 400px; height: 270px; margin: 20px auto;}
+        #form1 fieldset{border: 5px solid #ddd}
+        #form1 legend{display: none;}
+        #form1 label{ width: 65px; display: inline-block;}
+        #form1 input{
+            width: 248px;
+            padding: 10px 20px;
+        }
+        #form1 #submit{
+            width: 100%;
+            background: rgb(5, 100, 127);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        #form2{
+            width: 500px;
+            height: 400px;
+            margin: 50px auto;
+            border: 1px solid #333;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        #form2 fieldset{border: none;}
+        #form2 legend{display: none;}
+        #form2 p{
+            border-bottom: 3px solid #ddd;
+        }
+        #form2 p:last-child{
+            border-bottom: none;
+        }
+        #form2 input{
+            border: none;
+            width: 100%;
+            padding: 10px;
+        }
+        #form2 input:focus{
+            outline: none;
+        }
+        #form2 #submit1{
+            background: rgb(211, 211, 8);
+            padding: 17px 0;
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" id="form1">
+        <fieldset>
+            <legend>로그인</legend>
+            <p>
+                <label for="userName">이름</label>
+                <input type="text" id="userName" placeholder="이름을 입력해 주세요">
+            </p>
+            <p>
+                <label for="userPWD">비밀번호</label>
+                <input type="password" id="userPWD" placeholder="비밀번호를 입력해 주세요">
+            </p>
+            <p>
+                <input type="submit" value="로그인" id="submit">
+            </p>
+        </fieldset>
+    </form>
+    <hr>
+    <form action="#" id="form2">
+        <fieldset>
+            <legend>로그인</legend>
+            <p>
+                <input type="text"  placeholder="카카오메일 아이디, 이메일, 전화번호" maxlength="300">
+            </p>
+            <p>
+                <input type="password"  placeholder="비밀번호">
+            </p>
+            <p>
+                <input type="submit" value="로그인" id="submit1">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

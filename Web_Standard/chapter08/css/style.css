@@ -1,0 +1,58 @@
+*{margin: 0; padding: 0;}
+#wrap{
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+}
+#loginWrap input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#loginWrap input[type=text]{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #000;
+}
+#loginWrap input[type=text]:focus{
+    outline: 2px dotted red;
+}
+#loginWrap input[value]{
+    font-weight: bold;
+}
+#loginWrap input:nth-child(2){
+    background: url(../images/ico-eye-on.png) no-repeat right 10px center;
+    outline: none;
+}
+#loginWrap input[type=submit]{
+    padding: 10px 20px;
+    background: #0c82e9;
+    color: #fff;
+    border: none;
+}
+.signWrap{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.signWrap a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+.signWrap a:first-child{
+    position: relative;
+    border: 1px solid #36b7fc;
+    background: #9cd1ed;
+    padding: 5px 10px 5px 30px;
+    border-radius: 3px;
+}
+.signWrap a:first-child::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    background: url(../images/ico-join.png) no-repeat;
+}

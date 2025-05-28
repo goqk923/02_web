@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>하늘의 포트폴리오</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    /* 반응형 메뉴용 */
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        display: none;
+        background-color: #1e3a5f;
+        width: 100%;
+        padding: 1rem 0;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>하늘의 포트폴리오</h1>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Intro -->
+  <section id="home" data-aos="fade-up">
+    <h2>Hi, I'm 하늘</h2>
+    <p>영상과 코딩을 사랑하는 크리에이터입니다.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>늦은 나이에 시작한 공부지만, 누구보다 열심히 HTML/CSS를 배우며 성장하고 있습니다.</p>
+  </section>
+
+  <!-- Works -->
+  <section id="works" data-aos="zoom-in">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>프로젝트 이름</h3>
+      <p>설명...</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" data-aos="fade-left">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Figma</li>
+      <li>Premiere Pro</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>이메일: goqk923@gmail.com</p>
+    <form>
+      <input type="text" placeholder="이름" required />
+      <input type="email" placeholder="이메일" required />
+      <textarea placeholder="메시지" required></textarea>
+      <button type="submit">보내기</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 하늘. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

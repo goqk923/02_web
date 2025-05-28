@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title> transform 속성으로 요소 변경하기 </title>
+      <meta charset="UTF-8" />
+      <style type="text/css">
+         body, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd {
+            margin:0px;
+            padding:0px;
+            }
+         body {
+            background:url(images/eye_bg.png) repeat-x;
+            }
+         header {
+            background:url(images/eyetop.png) no-repeat center 36px ;
+            width:638px;
+            height:369px;
+            margin:0px auto;
+            }
+         header h1, header h2, header p {
+            display:none;
+            }
+         section {
+            width:600px;
+            margin:25px auto;
+            }
+   
+         section dt, section dd {
+            display:inline;
+            }
+         /* Transform */   
+            #book1 {
+               width:170px;
+               height: 48px;
+               background: #f00;
+               color: #fff;
+               font-size: 2em;
+               overflow: hidden;
+               transition: width 0.5s;
+            }
+            #book1:hover{
+               width: 900px
+            }
+
+            .box{
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+            }
+            .rect{
+               width: 100px;
+               height: 100px;
+               border-radius: 0;
+               background: red;
+               /* transition-property: background-color, border-radius;
+               transition-duration: 1s; */
+               transition:  background-color, border-radius 1s;
+            }   
+            .box:hover .rect{
+               border-radius: 50%;
+               background: rgb(5, 124, 179);
+            }
+            .rect1{
+               width: 100px;
+               height: 100px;
+               background: blueviolet;
+               margin: 100px;
+               transition: 1s;
+            }
+            .rect1:hover{
+               transform: scale(2) perspective(120px) rotateY(180deg);
+            }
+            .b{width: 100px; height: 100px; background: red; float: left; margin: 100px;}
+            .box2{
+               transform: scale(1);
+               transition: 2s;
+            }
+            .box2:hover{
+               transform: scaleX(1.5);
+            }
+            .box3{
+               transform: rotate(0deg);
+               transition: 2s;
+            }
+            .box3:hover{
+               transform: rotate(560deg);
+            }
+            .box4{
+               transform: skew(0deg);
+               transition: .3s;
+            }
+            .box4:hover{
+               transform: skewY(40deg);
+            }
+            .box5{
+               transform: translateX(0);
+               transition: .3s;
+            }
+            .box5:hover{
+               transform: translateX(100px);
+            }
+      </style>
+   </head>
+
+   <body>
+      <header>
+         <h1>눈으로 익히는 IT 길잡이 눈길 시리즈</h1>
+         <h2> 교재+학습 통합형 IT 입문서 눈길 시리즈 </h2>
+         <p> 기초만 탄탄히 다지면 응용 실력은 저절로 따라온다.필수 기능만을 엄선하여 학습 부담을 없앴습니다.</p>
+      </header>
+      <section>
+         <dl id="book1">
+          <dt>포토샵 CS5</dt>
+          <dd>다년간의 포토샵 강의 노하우로 포토샵의 기본기를 한권으로 끝낸다!</dd>
+         </dl>
+         <dl id="book2">
+          <dt>일러스트레이터 CS5</dt>
+          <dd>캐릭터 디자인부터 고급 일러스트까지 만는 벡터 그래픽툴.</dd>
+         </dl>
+      </section>   
+      
+      <div class="box">
+         <div class="rect"></div>
+      </div>
+      <div class="box1">
+         <div class="rect1"></div>
+      </div>
+      <div class="box2 b"></div>
+      <div class="box3 b"></div>
+      <div class="box4 b"></div>
+      <div class="box5 b"></div>
+   </body>
+</html>

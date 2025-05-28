@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> FAQ </title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+			*{margin: 0; padding: 0;}
+			body{background: url(./images/pattern_gray.png); margin-top: 50px;}
+			h1{
+				background: #fff;
+				text-align: center;
+				padding: 10px 0;
+				border-top: 1px solid #000;
+				border-bottom: 5px solid #000;
+			}
+			#faqBox{
+				background: #666;
+				width: 500px;
+				margin: 20px auto;
+				padding: 10px;
+				color: #fff;
+				box-shadow: 0 0 20px #373737;
+				border: 3px solid #fff;
+				border-radius: 20px;
+				font-size: 14px;
+			}
+			h2{
+				margin: 20px 0;
+				border-bottom: 1px dashed #fff;
+				padding-left: 20px;
+				padding-bottom: 5px;
+			}
+			dt{background: #000; padding: 5px; border-radius: 5px; margin-left: 20px; font-weight: bold;
+			}
+			dt::before{
+            	content: "Q...";
+            	font-size: 17px;
+            	color: #5cc705;
+            	/* font-weight: bold; */
+         	}
+			dd::before{
+				content: "A...";
+				font-size: 17px;
+				color: #fff;
+				
+			}
+			dd{margin-left: 40px; text-align: justify;}
+		</style>
+	</head>
+
+	<body>
+		<h1><img src="images/faq_topimg.jpg" width="687" height="44" alt="faq" /></h1>
+		<div id="faqBox">	
+		 <h2>3DS MAX에서 에러 메시지</h2>
+		 <dl>
+			<dt>Missing Map Files 의 에러 메시지가 나옵니다</dt>
+			<dd>
+				위와 같은 에러 메시지는 맥스 3.1 풀버전을 설치하시지 않으셨기 때문입니다.
+				맥스 3.1 setup 시에 custom 옵션에서 모든 항목을 체크하시면 door 와 windows라는 플러그인이 설치가 됩니다.
+			</dd>
+		 </dl>
+		</div>
+	</body>
+</html>

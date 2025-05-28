@@ -1,0 +1,91 @@
+/* 기본 초기화 */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {
+  font-family: '맑은 고딕', sans-serif;
+}
+#wrap {
+  width: 100%;
+}
+
+/* 공통 container 중앙 정렬 */
+header, .main-slide, .content, footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* A 영역: 헤더 */
+header {
+  height: 100px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 0 20px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.main-menu ul {
+  display: flex;
+  list-style: none;
+}
+.main-menu > ul > li {
+  position: relative;
+  margin-left: 30px;
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.main-menu li:hover .sub-menu {
+  display: block;
+}
+.sub-menu li {
+  margin: 5px 0;
+  white-space: nowrap;
+}
+
+/* B 영역: 이미지 슬라이드 */
+.main-slide {
+  height: 300px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+/* C 영역: 공지/갤러리/배너 */
+.content {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.notice, .gallery, .banner {
+  width: 32%;
+  background-color: #eee;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* D 영역: 푸터 */
+footer {
+  height: 100px;
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 0 20px;
+  margin-top: 20px;
+}

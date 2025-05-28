@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{border: 5px  solid #ddd; padding: 50px; margin-bottom: 10px;}
+        /* .hide{display: none;} */
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>텍스트 입력하기</h1>
+        <hr>
+        <h2>레드향</h2>
+        <h3>레드향 샐러드 레시피</h3>
+        <h3>상품구성</h3>
+    </div>
+    <div class="wrap">
+        <h1>p태그, br 태그</h1>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. <br> Debitis placeat voluptatem 
+            <br>molestiae et officiis quis repudiandae omnis! <br>
+            <br>Sunt voluptate aut sapiente, 
+            <br>explicabo error laboriosam laborum, 
+            <br>amet totam quis similique alias!
+        </p>
+        <hr class="hide">
+        <h2>레드향</h2>
+        <p>껍질에 붉은 빛이 돌아 레드향이라 불린다</p>
+        <p>레드향은 한라봉과 귤ㅇ르 교배한 것으로 <br> 일반 귤보다 2~3배 크고 과육이 불고 통통하다</p>
+        <p>비타민 C와 비타민 P가 풍부해 <br> 혈액순환, 감기예방 등에 좋은것으로 알려져 있다.</p>
+    </div>
+    <div class="wrap">
+        <h2>앤티티코드</h2>
+        <p>&amp; &</p>
+        <p>Lorem &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ipsum, dolor sit amet consectetur adipisicing elit. Fugit vitae illo quas. Nulla, facilis sunt. Ratione sint omnis nesciunt, cum aspernatur, odio quae sapiente in reprehenderit maiores ut corporis modi.
+        </p>
+
+        <p>
+            서울시 종로구 숭인동 현대 빌라. 조지현&#38;선생님&nbsp;&nbsp;&nbsp; &lt;TEL:02-1234-1234&gt;
+            <br>COPYRIGHT&copy;2019
+        </p>
+            
+    </div>
+    <div class="wrap">
+        <h2>텍스트 관련 요소</h2>
+        <hr>
+        <h3>blockquote - 인용문</h3>
+        <blockquote cite="https://chatgpt.com/c/680aeb5c-9578-8002-a7e8-9837928ac821">아는 <q>사람은</q> 좋아하는 사람만 못하고, <q>좋아하는 사람은 <q>즐기는 사람만</q> 못하다.</q></blockquote>
+
+        <h3>strong</h3>      
+        <p><strong>굵게 강조할 텍스트</strong></p>
+        <p>strong은 웹사이트의 내용을 강조할때 사용한다</p>
+        
+        <p><b>굵게 강조할 텍스트</b></p>
+        <p>b은 웹사이트의 굵게 디자인을 할때 사용한다</p>
+
+        <h3>em, i(기울기) sup, sup(윗첨자, 아래첨자)</h3>
+        <p>Lorem <em>ipsum dolor sit</em> amet consectetur <i>adipisicing elit.</i> Corporis accusamus eum praesentium mollitia iste, provident molestiae nemo quos modi<sub>modi</sub> quod iure, assumenda<sup>assumenda</sup> architecto at voluptatem nulla dolore quam delectus! Iusto?</p>
+        <h3>mark</h3>
+        <p>Lorem ipsum <mark>dolor</mark>, sit amet consectetur adipisicing elit. Voluptatem debitis hic quo nisi alias obcaecati, temporibus suscipit rerum, dolores aliquid quia cum recusandae vero perferendis iure amet at? Inventore, voluptatem!</p>
+        <h3>meter</h3>
+        <p>독일의 가장 중심적인 와인 생상 지역인 라인가우 지역의 포도 품종에 리즐리 <meter value="0.80"></meter> 80%, 슈페트버건드 <meter value="0.08"></meter> 8%가 대표적이다</p>
+        <h3>ruby, rt</h3>
+        <p><ruby>韓子 <rt>한자</rt></ruby></p>
+
+        <h3>del, ins</h3>
+        <p><del>삭제된 내용</del></p>
+        <p><ins>추가된 내용</ins></p>
+        <p>가격: 13000원<small>부과세별도</small></p>
+
+         <h3>details</h3>
+         <details>
+            <summary>details는 세부 항목이나 추가 정보를 숨겨 놓았다가 펼쳐 보여줄 수 있는 기능</summary>
+            <p>우와!!!!!!!</p>
+            <p>lo은 </p>
+         </details>
+
+    </div>
+    <div class="wrap">
+        <h2>목록만들기</h2>
+        <h3>순서 있는 목록</h3>
+        <ol>
+            <li>원피스
+            <li>스투시반팔</li>
+            <li>티셔츠</li>
+            <li>사색</li>
+            <li>블라우스</li>
+            <li>바람막이</li>
+        </ol>
+
+
+        <h3>순서 없는 리스트</h3>
+        <h4>web design</h4>
+        <ul>
+            <li>피그마</li>
+            <li>자바스크립트</li>
+            <li>css
+                <ul>
+                    <li>style
+                        <ul>
+                            <li>background</li>
+                            <li>font-size</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3>정의 목록 리스트</h3>
+        <dl>
+            <dt>조지현</dt>
+            <dd>학원 강사이다</dd>
+        </dl>
+        <dl>
+            <dt>선물용 3kg</dt>
+            <dd>소과 13~16과</dd>
+            <dd>중과 10~12과</dd>
+        </dl>
+    </div>
+</body>
+</html>

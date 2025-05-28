@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠팡</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body{margin: 50px;}
+        h2{text-align: center; font-size: 24px; font-weight: 700; }
+        form{
+            border: 5px solid #ccc;
+            width: 700px;
+            margin: 50px auto;
+            padding: 30px;
+        }
+        legend{display: none;}
+        li{
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        li label{
+            display: inline-block;
+            width:78px;
+        }
+        li input{
+            width: 87%;
+            padding: 8px 5px;
+            box-sizing: border-box;
+
+        }
+        #d-day{width: 50%}
+        small{position: relative; top: 10px; left: 5px; font-size: 12px;}
+        div {text-align: center; margin-top: 40px;}
+        div input{
+            border: none;
+            background: #f55555;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        h3{text-align: center; margin-top: 20px; margin-bottom: 20px;}
+        .button li{
+            border-bottom: none;
+            float: left;
+        }
+        .button li label{width: 100px;}
+        .button li input{width: 35px;}
+        .button:after{clear: both; content:""; display: block;}
+        .checkButton label{width: 173px;}     
+        /* .memo{}    */
+    </style>
+</head>
+<body>
+    <h2>배송정보</h2>
+    <form action="#">
+        <fieldset>
+            <legend>배송정보</legend>
+            <ul id="shipping">
+                <li>
+                    <label for="prod">주문상품</label>
+                    <input type="text" id="prod" value="상품용 3kg" readonly>
+                </li>
+                <li>
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" required autofocus>
+                </li>
+                <li>
+                    <label for="user-addr">배송 주소</label>
+                    <input type="text" id="user-addr" required>
+                </li>
+                <li>
+                    <label for="mail">이메일</label>
+                    <input type="email" id="mail">
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone" required placeholder="하이픈 빼고 입력해 주세요(01096065680)">
+                </li>
+                </li>
+                <li>
+                    <label for="d-day">배송지정</label>
+                    <input type="date" id="d-day"><small>(주문일로부터 최소 3일 이후)</small>
+                </li>
+                <li>
+                    <label for="path">가입경로</label>
+                    <select name="path" id="path">
+                        <option value="blog">블로그</option>
+                        <option value="search">검색</option>
+                        <option value="sns">sns</option>
+                        <option value="etc">기타</option>
+                        
+                    </select>
+                    <li>
+                        <label for="memo">메모</label>
+                        <textarea name="memo" id="memo" maxlength="500" cols="40" rows="4">남길 말씀이 있다면 여기에...
+                        </textarea>
+
+                        
+                       
+
+                    </li>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <h3>이벤트와 새로운 소식</h3>
+            <ul id="radioButton" class="button">
+                <li>
+                    <input type="radio" id="mailon" name="mail" checked>
+                    <label for="mailon">메일 수신</label>
+                </li>
+                <li>
+                    <input type="radio" id="mailoff" name="mail">
+                    <label for="mailoff">메일 수신 안함</label>
+                </li>
+            </ul>
+            <h3>개인 정보 수집 약관</h3>
+            <ul id="checkButton" class="button">
+                <li>
+                    <input type="checkbox" id="p1" name="mail" checked>
+                    <label for="p1">이용약관</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="p2" name="mail">
+                    <label for="p2">개인 정보 수집 이용</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="p3" name="mail">
+                    <label for="p3">위치 기반 서비스 이용약관</label>
+                </li>
+            </ul>
+        </fieldset>
+        <hr>
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+    </form>
+</body>
+</html>

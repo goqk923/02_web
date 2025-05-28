@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>다양한 속성으로 테두리 표시하기 </title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+			*{margin: 0; padding: 0;}
+			#box{
+				border: 15px solid #000;
+
+			}
+			#box div{
+				width: 70%;
+				background: fixed;
+				margin: 30px auto;
+				border: 15px double green;
+			}
+			#box p{
+				border-bottom:  1px dashed green;
+				padding: 10px;
+			}
+			#box p:lang-child{
+				border-bottom: none;
+			} 
+			/* #box .removeLine{border-bottom: none;} */
+			
+			h1{text-align: center;}			
+
+
+			table{width:  590px; border: #ccc 50px solid; margin: 5px auto;}
+			table div{ padding: 10px; text-align: center;}
+			.tbox1{border: none;}
+			.tbox2{border: 5px solid #c51414;}
+			.tbox3{border: 5px dotted #8b940c;}
+			.tbox4{border: 5px dashed #31a813;}
+			.tbox5{border: 5px double #1bc54e;}
+			.tbox6{border: 5px groove #1bd1c8;}
+			.tbox7{border: 5px ridge #0e75b1;}
+			.tbox8{border: 5px inset #2522cc;}
+			.tbox9{border: 5px outset #310e83;}
+			
+			/* h1{width:  590px; border: #070606 50px solid; margin: 5px auto;} */
+		</style>
+	</head>
+
+	<body>
+		<h1>알버트 아인슈타인 어록 </h1>
+		<div id="box"> 
+			<p>It's not that I'm so smart , it's just that I stay with problems longer. <br />
+						나는 똑똑한 것이 아니라 단지 문제를 더 오래 연구할 뿐이다. </p>
+			<p>I never came upon any of my discoveries through the process of rational thinking. <br />
+						나는 단 한번도 이성적인 사고를 통해 발견한 적이 없다. </p>
+			<p class="removeLine">Technological progress is like an axe in the hands of a pathological criminal. <br />
+						기술의 진보는 마치 병적인 범죄자의 손에 든 도끼와 같다.</p>
+		</div>
+		<table>
+			<tr>
+				<td><div class="tbox1">nane</div></td>
+				<td><div class="tbox2">solid</div></td>
+				<td><div class="tbox3">dotted</div></td>
+			</tr>
+			<tr>
+				<td><div class="tbox4">dashed</div></td>
+				<td><div class="tbox5">double</div></td>
+				<td><div class="tbox6">groove</div></td>
+			</tr>
+			<tr>
+				<td><div class="tbox7">ridge</div></td>
+				<td><div class="tbox8">inset</div></td>
+				<td><div class="tbox9">outset</div></td>
+			</tr>
+		</table>
+	</body>
+</html>

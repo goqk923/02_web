@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>요소의 배경 처리하기</title>
+      <meta charset="UTF-8" />
+      <style type="text/css">
+         /* body{
+            
+         } */
+         .desc{
+            background: yellow;
+            width: 500px;
+            margin-bottom: 30px;
+            border: 3px dotted #000;
+            padding: 20px;
+         }   
+         #clip-border{
+            background-clip: border-box;
+         }
+         #clip-padding{
+            background-clip: padding-box;
+         }
+         #clip-content{
+            background-clip: content-box;
+         }
+         .section{width: 100%; height: 700px;}
+         #section1{
+			background: pink;
+			background: repeating-linear-gradient(yellow,yellow 20px, pink 20px, pink 400px);
+		}
+         #section2{
+			background: orange(218, 160, 27);
+			background: repeating-radial-gradient( circle, where 10%, orange 10%, orange 20%);
+		}
+         #section3{
+			background:linear-gradient(to right, #000 0%, #fff 100%), url(./images/ferris-wheel-7859855_1920.jpg);
+            background-image: url(./images/ferris-wheel-7859855_1280.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+			background-blend-mode: multiply;
+            /* background:linear-gradient(to ridge, #000 0%, #fff 100%), url(./images/ferris-wheel-7859855_1920.jpg), no-repeat center center/cover fixed multiply; */
+         }
+         #section4{
+			background: rgb(74, 238, 84);
+            background: linear-gradient(to right bottom, blue, white);
+		}
+         #section5{
+			background: rgb(87, 168, 229);
+			background: linear-gradient(to bottom #f00, white 30%, #f0f);
+		}
+         #section6{
+			background: rgb(229, 87, 101);
+			background: radial-gradient(circle are, white, yellow, red);
+		}
+      </style>
+   </head>
+
+   <body>
+      <div id="section1" class="section">
+         <p>Well done is better than well said.</p>
+         <p>Seeing much, suffering much, and studying much, are the three pillars of learning. </p>
+         <p>Education is a progressive discovery of our own ignorance. </p>
+         <p>I want to know God's thoughts; the rest are details.</p>
+         <p>When all think alike, no one thinks very much.</p>
+         <p>Science is a wonderful thing if one does not have to earn one's living at it. </p>
+         <p>It's not that I'm so smart , it's just that I stay with problems longer.</p>
+         <p>Theories should be as simple as possible, but not simpler. </p>
+         <p>Technological progress is like an axe in the hands of a pathological criminal.</p>
+         <p>I never came upon any of my discoveries through the process of rational thinking. </p>
+         <p>Try not to become a man of success but rather to become a man of value. </p>
+         <p>Gravitation cannot be held responsible for people falling in love.</p>
+         <p>What is written without effort is in general read without pleasure. </p>
+         <p>Sincerity is the way of Heaven. </p>
+         <p>The man who moves a mountain begins by carrying away small stones.</p>
+         <p>While there's life, there's hope. </p>
+         <p>Paradise is where I am. </p>
+      </div>
+      <div id="container">
+         <div class="desc" id="clip-border">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ullam obcaecati voluptas voluptatum reprehenderit temporibus at, eveniet, distinctio minima iusto commodi quo nisi? Sequi eaque, exercitationem corporis expedita quisquam qui?</div>
+         <div class="desc" id="clip-padding">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ullam obcaecati voluptas voluptatum reprehenderit temporibus at, eveniet, distinctio minima iusto commodi quo nisi? Sequi eaque, exercitationem corporis expedita quisquam qui?</div>
+         <div class="desc" id="clip-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ullam obcaecati voluptas voluptatum reprehenderit temporibus at, eveniet, distinctio minima iusto commodi quo nisi? Sequi eaque, exercitationem corporis expedita quisquam qui?</div>
+      </div>
+      <div id="section2" class="section"></div>
+      <div id="section3" class="section"></div>
+      <div id="section4" class="section"></div>
+      <div id="section5" class="section"></div>
+      <div id="section6" class="section"></div>
+   </body>
+</html>

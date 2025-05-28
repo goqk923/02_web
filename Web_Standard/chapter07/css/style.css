@@ -1,0 +1,32 @@
+:root{
+    --bg-color: #2584ea;
+    --main-text-color: #fff
+}
+
+body{
+    background: var(--bg-color);
+    color:var(--main-text-color);
+}
+
+nav{
+    width: calc(100% / 2);
+    background: #f00;
+    margin:0 auto;
+}
+ul{display: flex; list-style: none; justify-content: center;}
+
+.main{
+    max-width: 1500px;
+    width: 100%;
+    height: 200px;
+    background: yellowgreen;
+    margin: 0 auto;
+}
+.blur{filter: blur(5px);}
+.brightness{filter: brightness(2);}
+.contast{filter: contrast(200%);}
+.drop-shadow{filter: drop-shadow(5px 5px 50px #000);}
+.grayscale{filter: grayscale(100%);}
+.invert{filter: invert(100%);}
+.sepia{filter: sepia();}
+.opacity{filter: opacity(50%);}
