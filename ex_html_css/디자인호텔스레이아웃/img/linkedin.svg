@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="social" transform="translate(-18.000000, -18.000000)">
+            <g id="linkedin" transform="translate(18.000000, 18.000000)">
+                <rect id="Rectangle-Copy-3" x="0" y="0" width="24" height="24"></rect>
+                <path d="M16.8041,9.0298 C14.8701,9.0298 14.0041,10.0918 13.5191,10.8388 L13.5191,10.8748 L13.4951,10.8748 C13.5031,10.8648 13.5131,10.8518 13.5191,10.8388 L13.5191,9.2868 L9.8761,9.2868 C9.9231,10.3148 9.8761,20.2488 9.8761,20.2488 L13.5191,20.2488 L13.5191,14.1268 C13.5191,13.7978 13.5431,13.4728 13.6391,13.2378 C13.9031,12.5858 14.5031,11.9038 15.5091,11.9038 C16.8291,11.9038 17.3561,12.9108 17.3561,14.3838 L17.3561,20.2488 L21.0001,20.2488 L21.0001,13.9638 C21.0001,10.5958 19.2001,9.0298 16.8041,9.0298" id="Fill-16" fill="#000000"></path>
+                <path d="M6.061,4 C4.816,4 4,4.82 4,5.896 C4,6.946 4.79,7.79 6.013,7.79 L6.037,7.79 C7.308,7.79 8.099,6.946 8.099,5.896 C8.076,4.82 7.308,4 6.061,4" id="Fill-18" fill="#000000"></path>
+                <polygon id="Fill-20" fill="#000000" points="4.2149 20.2486 7.8599 20.2486 7.8599 9.2866 4.2149 9.2866"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
