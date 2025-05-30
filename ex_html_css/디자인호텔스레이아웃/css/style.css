@@ -31,6 +31,12 @@ header{
     top: 0;
     left: 0;
     z-index: 99;
+    background: transparent;
+    transition: background .3s ease;
+}
+
+header.scrolled{
+    background: #fff;
 }
 header .container{
     display: flex;
@@ -82,6 +88,7 @@ header .container .searchWrap ul li a{
     text-decoration: none;
     top: -2px
 }
+
 header .container .searchWrap ul li a.leftLine:after{
    position: absolute;
    content:"";
@@ -95,9 +102,22 @@ header .container nav{
     display: flex;
 }
 header .container nav ul{display: flex;}
-header .container nav ul>li{}
+header .container nav ul li.hidesearch{display: none;}
+header.scrolled .container nav ul>li>a{
+    color: #000;
+}
+header.scrolled .container nav ul>li>a svg{
+    fill: #000;
+}
+header .container nav button a svg{
+    fill: #fff;
+}
+header.scrolled .container nav button a svg{
+    fill: #000;
+}
 header .container nav ul>li>a{ color: #fff;
     padding: 0 20px;
+    transition: all .3s;
 }
 header .container nav ul>li>a svg{fill:#fff}
 header .container nav button{
@@ -521,11 +541,11 @@ section{margin-bottom: 50px;}
 }
 
 .imgP a{ display: flex; color: #000; height: 30px; align-items: center;}
-.imgP a p{font-size: 12px; margin-right: 10px;}
+.imgP a p{font-size: 12px;margin-right: 10px;}
 .imgP a h3{ background: #000; color: #fff; border-radius: 50%; width: 50px; height: 50px; font-size: 14px; text-align: center; line-height: 50px;}
 .na{ position: absolute; top: 84px; left: 30px;}
-.asia{ position: absolute; top: 84px; right: 156px;}
-.australia{ position: absolute; bottom: 84px; right: 156px;}
+.asia{ position: absolute; top: 84px; right:156px;}
+.australia{ position: absolute; bottom: 84px; right:100px;}
 
 .section5-img img{opacity: .3;}
 .section6{
@@ -539,7 +559,6 @@ section{margin-bottom: 50px;}
 .section6Swiper .swiper-slide img:hover{opacity: .7;}
 .section6Swiper .textbox{margin-top: 20px;}
 .section6Swiper p{margin-top: 10px;}
-
 
 .section7{
     width: 100%;
@@ -559,6 +578,7 @@ section{margin-bottom: 50px;}
     letter-spacing: -1px;
     font-size: 2.4em;
     line-height: 1.3;
+
 }
 .section7 .section7_left .btns{margin-top: 50px;}
 .section7 .section7_left .btns a{
@@ -579,19 +599,19 @@ section{margin-bottom: 50px;}
 .section7 .section7_right{
     width: 50%;
 }
-.section7 .section7_right .h1{color: #000;}
+.section7 .section7_right .h1{ color: #000}
 .section7 .section7_right ul{
     display: flex;
     flex-wrap: wrap;
 }
 .section7 .section7_right ul li{
     width: 48%;
-    padding: 20px 30px 20px 0;
+    padding: 20px 0;
     box-sizing: border-box;
     border-bottom: 1px solid #ddd;
 }
 .section7 .section7_right ul li:nth-child(2n){
-    margin-left: 4%;
+    margin-left:4%;
 }
 .section7 .section7_right ul li:nth-child(5),
 .section7 .section7_right ul li:nth-child(6){
@@ -610,16 +630,17 @@ footer{
     width: 100%;
     height: 175px;
 }
-
+    
 footer .container{
-        border-top: 1px solid #666;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 30px;
+    border-top: 1px solid #666;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
 }
 .footer-left{
     display: flex;
 }
+
 .footer-left>.footerLogo{
     margin-right: 100px;
 }
@@ -639,20 +660,17 @@ footer .container{
 .footer-left>.f_menu ul{
     margin-right: 50px;
 }
-.footer-left>.f_menu ul li{}
 .footer-left>.f_menu ul li a{
     color: #000;
     font-size: 12px;
     font-weight: bold;
 }
-
-.footer-right{}
 .footer-right>div{
     display: flex;
-    font-display: column;
+    flex-direction: column;
     justify-content: space-between;
 }
-.footer-right>div .hideCurrency{ position: relative; width: 100px; height: 50px; left: 120px;}
+.footer-right>div .hideCurrency{ position: relative; width: 100px; height: 50px; left: 120px}
 .footer-right>div .hideCurrency a{
     color: #000;
     font-size: 12px;
@@ -660,12 +678,11 @@ footer .container{
     display: flex;
     align-items: center;
 }
-.footer-right>div .hideCurrency a span{}
 .footer-right>div .hideCurrency a i{
     display: inline-block;
     width: 20px;
     height: 17px;
-    
+   
     background: url(../img/dd-down.svg) no-repeat right center;
     
 }
@@ -682,12 +699,13 @@ footer .container{
     background: #fff;
     display: none;
 }
-.footer-right>div .hideCurrency>div ul{}
-.footer-right>div .hideCurrency>div ul li{}
-.footer-right>div .hideCurrency>div ul li a{}
-.footer-right>div>ul{display: flex; margin-top: 30px;}
+.footer-right>div .hideCurrency >div ul li{
+    line-height: 200%;
+}
+.footer-right>div>ul{display: flex; 
+    margin-top: 30px;
+}
 .footer-right>div >ul li{ margin: 0 10px;}
-
 
 @media screen and (max-width: 1536px) {
     .container{
@@ -765,19 +783,21 @@ footer .container{
         text-align: center;
     }
     .section5 .section5Margin{
-        margin: 0 0 50px;
+        margin: 0 0px 50px;
         display: flex;
         flex-direction: column;
+
     }
     .section5-img{
-        width: 100%;
+        width: 100%
     }
 }
 @media screen and (max-width: 1000px) {
    header .container .searchWrap{
        display: none;
     }
-
+    header .container nav ul li.showMenu{display: none;}
+    header.scrolled .container nav ul li.hidesearch{display: block;}
     .section4{
         height: auto;
     }
@@ -804,11 +824,44 @@ footer .container{
     .section7 .section7_left{
         width: 100%;
     }
-    .section7 .section7_right{
+     .section7 .section7_right{
         margin-top: 30px;
         width: 100%;
     }
 
+    footer .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-left{
+        flex-direction: column;
+    }
+    .footer-left .f_menu{
+        flex-direction: column;
+         margin-top: 50px;
+         margin-bottom: 50px;
+    }
+     .footer-left .f_menu ul{
+       
+     }
+
+    .footer-left .f_menu ul li{
+        line-height: 250%;
+        border-bottom: 1px solid #ddd;
+    }
+    .footer-right>div{
+        flex-direction: row;
+    }
+    .footer-right>div>.hideCurrency{
+        left:0;
+        order: 1;
+    }
+    .footer-right>div>ul{
+        margin-top: 0;
+    }
+
+
+    
 }
 @media screen and (max-width:960px) {
     .section2{

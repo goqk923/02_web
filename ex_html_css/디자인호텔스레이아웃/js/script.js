@@ -114,4 +114,20 @@ $(function () {
       let index = $(this).index();
       showSlide2(index);
     });
+
+
+    $('.currency').on('click', function(e){
+      e.preventDefault();
+      $(this).next('.hide').toggle();
+    });
+
   });
+
+  $(window).on('scroll', function(){
+    if($(this).scrollTop() > 50){
+        $('header').addClass('scrolled');
+    }else{
+        $('header').removeClass('scrolled');
+    }
+  });
+

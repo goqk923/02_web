@@ -32,7 +32,7 @@ h1>a{
     justify-content: center;
 }
 nav{padding: 53px 20px 0 0;}
-nav>ul{display: flex; position: relative; z-index: 3;}
+nav>ul{display: flex; position: relative; z-index: 3; }
 
 nav>ul>li>a{
     display: block;
@@ -47,12 +47,12 @@ nav>ul>li>a{
 
 nav>ul>li:hover>a{
     background: #000;
-    color: #fff;
+    color: #fff
 }
 nav>ul>li>ul{
-    height: 0;
-    overflow: hidden;
-    transition: .5s;
+   height: 0;
+   overflow: hidden;
+   transition: .5s;
 }
 nav:hover>ul>li>ul{
     height: 90px;
@@ -65,7 +65,7 @@ nav>ul>li>ul>li{
 nav>ul>li>ul>li>a{
     color: #fff;
     display: block;
-    transition: .5s;
+    transition:.5s
 }
 nav>ul>li>ul>li>a:hover{
     background: #fff;
@@ -104,8 +104,7 @@ nav:hover .bg{
 .mainSlide li.active {
     display: block;
 }
-
-.mainSlide ul li a img{width: 100%;}
+.mainSlide ul li a img{width: 100%}
 main{
      width: 100%;
     height: 200px;
@@ -143,10 +142,10 @@ main>div{
 }
 
 .notice .tab a.active {
-    background-color: #5ba0e0;
+    background-color: #26a5e5;
     color: #000;
     font-weight: bold;
-
+   
 }
 
 .noticeContent > div {
@@ -161,7 +160,6 @@ main>div{
 .noticeContent > div.active {
     display: block;
 }
-
 
 footer{
     width: 100%;
