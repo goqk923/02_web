@@ -42,5 +42,13 @@
         $('.noticeContent > div').removeClass('active');
         $('.noticeContent > div').eq(index).addClass('active');
     });
+
+    //모달창
+    $('.first').click(function(){
+        $('.madalWrap').css('display','block');
     });
+    $('.close').click(function(){
+        $('.madalWrap').css('display','none');
+    });
+});
    
