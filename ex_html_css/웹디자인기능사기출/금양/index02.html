@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>법무법인 금양</title>
+  <link rel="stylesheet" href="./css/style02.css">
+  <script src="./js/script02.js" defer></script>
+</head>
+<body>
+  <!-- A : 로고 & 메뉴 -->
+  <header>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="법무법인 금양 로고">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">홈</a></li>
+        <li><a href="#">업무분야</a></li>
+        <li><a href="#">성공사례</a></li>
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">상담문의</a></li>
+        <li><a href="#">오시는 길</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- B : Main image -->
+  <section class="main-image">
+    <img src="02_메인이미지/images(1).jpg" alt="메인이미지">
+  </section>
+
+  <!-- C : Contents -->
+  <section class="contents">
+
+    <!-- 컨텐츠 1 : Practice areas -->
+    <article class="content-box">
+      <h2>Practice areas<br><small>업무분야</small></h2>
+      <ul>
+        <li>기업일반</li>
+        <li>형사</li>
+        <li>민사</li>
+        <li>행정</li>
+        <li>노동</li>
+        <li>건설, 부동산</li>
+        <li>이혼, 사라</li>
+        <li>집단소송</li>
+        <li>법무, 개인회생/파산</li>
+      </ul>
+    </article>
+
+    <!-- 컨텐츠 2 : 성공사례 -->
+    <article class="content-box">
+      <h2>Workers<br><small>성공사례</small></h2>
+      <p>취업때문에 친구와 한 ‘가짜결혼’은 혼인무효이다? 아니다?</p>
+    </article>
+
+    <!-- 컨텐츠 3 : 뉴스 & 공지사항 -->
+    <article class="content-box">
+      <h2>News & Notice<br><small>뉴스&공지사항</small></h2>
+      <ul>
+        <li>집단소송 진행상황 관련 공지입니다.</li>
+        <li>집단소송 진행상황 관련 공지입니다.</li>
+        <li>집단소송 진행상황 관련 공지입니다.</li>
+        <li>집단소송 진행상황 관련 공지입니다.</li>
+        <li>집단소송 진행상황 관련 공지입니다.</li>
+      </ul>
+    </article>
+
+    <!-- 컨텐츠 4 : 상담문의 -->
+    <article class="content-box">
+      <h2>CS Center<br><small>상담문의</small></h2>
+      <p>063)229-2738</p>
+    </article>
+
+    <!-- 컨텐츠 5 : 오시는 길 -->
+    <article class="content-box">
+      <h2>Location<br><small>찾아오시는 길</small></h2>
+      <p>법무법인 금양의 위치 안내 입니다.</p>
+    </article>
+
+    <!-- 🔍 모달 트리거 버튼 추가 -->
+    <div class="content-box">
+      <button id="openModal">상세 이미지 보기</button>
+    </div>
+
+  </section>
+
+  <!-- 모달 구조 -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <span id="closeModal" class="close" aria-label="닫기">&times;</span>
+      <img src="03_컨텐츠이미지/modal_image/modal.png" alt="상세 이미지">
+    </div>
+  </div>
+
+  <!-- D : footer -->
+  <footer>
+    <p>법무법인 금양 &nbsp;&nbsp; 전라북도 전주시 덕진구 덕진동 1가 1547-223 &nbsp;&nbsp; 대표번호 063-1234-5678 &nbsp;&nbsp; E-mail geunyang@com</p>
+    <p>COPYRIGHT 법무법인 금양. ALL RIGHT RESERVED</p>
+  </footer>
+
+  <!-- style.css에 추가할 내용 -->
+  <!-- 
+  .modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .modal.hidden {
+    display: none;
+  }
+
+  .modal-content {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+  -->
+
+</body>
+</html>
